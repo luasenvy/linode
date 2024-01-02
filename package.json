@@ -19,6 +19,9 @@
       }
     ]
   },
+  "repository": {
+    "url": "https://github.com/luasenvy/nodeline.git"
+  },
   "scripts": {
     "vscode:prepublish": "npm run package",
     "compile": "webpack",
