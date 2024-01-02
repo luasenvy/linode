@@ -4,7 +4,7 @@ It runs nodejs for each selections and append the results.
 
 ## TL;DR
 
-\!\[run\]\(images/run.gif\)
+![run](run.gif)
 
 ```javascript
 while (selections)  
