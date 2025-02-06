@@ -2,20 +2,26 @@
   "name": "linode",
   "displayName": "linode",
   "description": "run nodejs each selections",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.96.0"
   },
   "categories": [
     "Other"
   ],
+  "publisher": "luasenvy",
+  "icon": "icon.webp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luasenvy/linode.git"
+  },
   "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "linode.helloWorld",
-        "title": "Hello World"
+        "command": "linode.run",
+        "title": "linode: Run nodejs each selections"
       }
     ]
   },
