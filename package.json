@@ -1,8 +1,8 @@
 {
-  "name": "nodeline",
-  "displayName": "nodeline",
-  "description": "Runs Node.js With Selections",
-  "version": "0.0.3",
+  "name": "linode",
+  "displayName": "linode",
+  "description": "run nodejs each selections",
+  "version": "0.0.1",
   "engines": {
     "vscode": "^1.96.0"
   },
@@ -14,13 +14,10 @@
   "contributes": {
     "commands": [
       {
-        "command": "nodeline.run",
-        "title": "nodeline: Run"
+        "command": "linode.helloWorld",
+        "title": "Hello World"
       }
     ]
-  },
-  "repository": {
-    "url": "https://github.com/luasenvy/nodeline.git"
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
@@ -30,28 +27,21 @@
     "compile-tests": "tsc -p . --outDir out",
     "watch-tests": "tsc -p . -w --outDir out",
     "pretest": "npm run compile-tests && npm run compile && npm run lint",
-    "lint": "eslint src --ext ts",
+    "lint": "eslint src",
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/mocha": "^10.0.10",
-    "@types/node": "22.x",
     "@types/vscode": "^1.96.0",
-    "@typescript-eslint/eslint-plugin": "^8.19.1",
-    "@typescript-eslint/parser": "^8.19.1",
-    "@vscode/test-cli": "^0.0.10",
-    "@vscode/test-electron": "^2.4.1",
-    "eslint": "^9.18.0",
-    "ts-loader": "^9.5.2",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.22.0",
+    "@typescript-eslint/parser": "^8.22.0",
+    "eslint": "^9.19.0",
     "typescript": "^5.7.3",
+    "ts-loader": "^9.5.2",
     "webpack": "^5.97.1",
-    "webpack-cli": "^6.0.1"
-  },
-  "dependencies": {
-    "@eslint/compat": "^1.2.5",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-import-resolver-typescript": "^3.7.0",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-prettier": "^5.2.1"
+    "webpack-cli": "^6.0.1",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
   }
 }

@@ -1,10 +1,10 @@
-# nodeline
+# linode
 
 It runs nodejs for each selections and append the results.
 
 ## TL;DR
 
-![run](run.gif)
+![run](./run.gif)
 
 ```javascript
 while (selections)  
